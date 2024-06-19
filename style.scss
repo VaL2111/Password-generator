@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(131, 131, 131, 0.5);
+}
+
+.password-generator {
+  width: 500px;
+  padding: 32px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.pwd-gen-content > * {
+  $size: 16px;
+  margin-top: $size;
+  padding: $size;
+  font-size: $size;
+}
+
+.pwd-gen-output {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 55px;
+  border: 1px solid black;
+}
+
+.pwd-gen-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.buttons {
+  width: 100%;
+  height: 60px;
+  font-size: 17px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: rgba(83, 83, 83, 0.5);
+}
+
+.buttons:hover {
+  background-color: rgba(30, 30, 30, 0.5);
+}
+
+.buttons:active {
+  background-color: rgba(10, 10, 10, 0.5);
+}
+
+// Settings
+
+.pwd-gen-settings > * {
+  font-size: 17px;
+}
+
+.pwd-gen-settings-title {
+  font-size: 20px;
+  font-weight: 650;
+  margin-bottom: 8px;
+}
+
+.pwd-gen-settings-content {
+  text-align: left;
+  border-radius: 4px;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.pwd-gen-settings-input {
+  $size: 4px;
+  width: 60px;
+  font-size: 17px;
+  padding: $size;
+  border-radius: $size;
+  margin-left: $size;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-container {
+  margin-top: 10px;
+
+  input {
+    transform: scale(1.2);
+    margin: 7px;
+  }
+}
